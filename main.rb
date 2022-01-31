@@ -21,7 +21,7 @@ class Main
 
   end
 
-  def displayScore
+  def display_score
     puts "P1: #{@player1.lives}/3 vs P2: #{@player2.lives}/3"
     puts
   end 
@@ -30,13 +30,13 @@ class Main
   def start
     while @player1.lives > 0 && @player2.lives > 0
       play(@player1)
-      displayScore
+      display_score
 
       if @player1.lives > 0
         puts '----- NEW TURN ------'
 
         play(@player2)
-        displayScore
+        display_score
         puts '----- NEW TURN ------'
 
       end
